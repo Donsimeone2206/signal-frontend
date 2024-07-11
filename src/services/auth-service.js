@@ -29,7 +29,6 @@ class AuthService {
   };
   addSignal = async (credentials) => {
     const addSignal = "signal/add";
-    console.log(addSignal, credentials);
     return await HttpService.post(addSignal, credentials);
   };
 
@@ -44,7 +43,6 @@ class AuthService {
   };
 
   deleteSignal = async (id) => {
-    console.log(id);
     const updateSignal = `signal/delete/${id.id}`;
     return await HttpService.delete(updateSignal);
   };
