@@ -42,6 +42,7 @@ function AddSignal() {
     stop: "",
     take: "",
     move: "",
+    action: "",
     expire: "",
   });
 
@@ -54,6 +55,7 @@ function AddSignal() {
     stopError: false,
     takeError: false,
     moveError: false,
+    actionError: false,
     expireError: false,
   });
 
@@ -91,6 +93,7 @@ function AddSignal() {
       entry: inputs.entry,
       take: inputs.take,
       move: inputs.move,
+      action: inputs.action,
       expire: inputs.expire,
       image: image,
     };
@@ -116,6 +119,7 @@ function AddSignal() {
         stop: "",
         take: "",
         move: "",
+        action: "",
         expire: "",
       });
 
@@ -131,6 +135,7 @@ function AddSignal() {
         stopError: false,
         takeError: false,
         moveError: false,
+        actionError: false,
         expireError: false,
       });
     } catch (res) {
@@ -294,6 +299,17 @@ function AddSignal() {
                       value={inputs.move}
                       onChange={changeHandler}
                       error={errors.moveError}
+                    />
+                  </MDBox>
+                  <MDBox mb={2}>
+                    <MDInput
+                      type="text"
+                      label="Action"
+                      fullWidth
+                      name="action"
+                      value={inputs.action}
+                      onChange={changeHandler}
+                      error={errors.actionError}
                     />
                   </MDBox>
                   <MDBox mb={2}>
