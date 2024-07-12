@@ -249,7 +249,7 @@ function AddSignal() {
                   <MDBox mb={2}>
                     <MDInput
                       type="text"
-                      label="Leverage"
+                      label="Leverage (Optional)"
                       fullWidth
                       name="leverage"
                       value={inputs.leverage}
