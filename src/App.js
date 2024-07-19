@@ -51,7 +51,7 @@ import { Helmet } from "react-helmet";
 
 export default function App() {
   const authContext = useContext(AuthContext);
-console.log(process.env.REACT_APP_API_URL);
+//console.log(process.env.REACT_APP_API_URL);
   const [controller, dispatch] = useMaterialUIController();
   const {
     miniSidenav,
